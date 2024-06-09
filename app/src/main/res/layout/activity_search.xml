@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.SearchActivity">
+
+    <!--    top view -->
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_view"
+        >
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_33985"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:onClick="backPressed"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/arrow"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/departure"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/topView"
+        android:layout_marginBottom="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbarSize="0dp"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/find_vehicle_view_background"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/u_search"
+                        android:layout_marginStart="12dp"
+                        />
+                    <EditText
+                        android:id="@+id/txtSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="12sp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:imeActionLabel="Done"
+                        android:hint="@string/search_plate_number"
+                        />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_car" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:text="@string/not_found"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

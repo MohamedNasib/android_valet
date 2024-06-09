@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_key" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_image"
+            android:layout_marginTop="-80dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/report_damage_dialog"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:fontFamily="@font/sf_pro_bold"
+                android:layout_marginTop="44dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_username_custom"
+                android:layout_marginTop="44dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/company_code"
+                    android:textSize="16sp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/et_passCode"
+                    android:fontFamily="@font/roboto"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/btn_username_custom"
+                android:layout_marginTop="25dp">
+
+                <EditText
+                    android:id="@+id/et_passCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/unlock"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:hint="@string/pass_code"
+                    android:textSize="16sp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:imeActionLabel="Done"
+                    android:fontFamily="@font/roboto"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_btn_face_id"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/btn_face_id_custom">
+                <ImageView
+                    android:id="@+id/face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/smile_icons_face"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_face_id_custom"
+                    android:textColor="@color/_007AFF"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/face"
+                    android:fontFamily="@font/sf_pro_semibold"
+                    android:text="@string/setup_face_unlock"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_go"
+                    app:tint="@color/_007AFF" />
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="52dp"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_arrival_background"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

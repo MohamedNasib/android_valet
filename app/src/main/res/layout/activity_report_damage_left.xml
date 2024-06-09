@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient_view"
+        >
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_33985"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:onClick="backPressed"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/report_damage"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_damage_left"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topView"
+        android:layout_marginTop="42dp" />
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/imgCar"
+        android:layout_alignBottom="@+id/imgCar"
+        android:layout_alignStart="@+id/imgCar"
+        android:layout_alignEnd="@+id/imgCar"
+        android:layout_marginBottom="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:weightSum="8">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS3"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS6"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS2"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS4"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS7"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:tag="LS9"
+                    android:padding="4dp"
+                    android:focusable="true"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="8">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:layout_marginEnd="4dp"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS1"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="4dp"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/damage_red"
+                    android:onClick="onCLick"
+                    android:focusable="true"
+                    android:tag="LS5"
+                    android:padding="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:tag="LS8"
+                    android:padding="4dp"
+                    android:onClick="onCLick"
+                    android:src="@drawable/damage_red" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_carDamage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_above="@+id/card_submit"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/topLayout"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_submit"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardElevation="15dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sf_pro_bold"
+            android:text="@string/submit_problem"
+            android:layout_margin="16dp"
+            android:background="@drawable/btn_arrival_background"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

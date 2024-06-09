@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TicketScannerActivity">
+
+<!--    <SurfaceView-->
+<!--        android:id="@+id/previewView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignStart="@+id/centerCropView"-->
+<!--        android:layout_alignEnd="@+id/centerCropView"-->
+<!--        android:layout_alignTop="@+id/centerCropView"-->
+<!--        android:layout_alignBottom="@+id/centerCropView"/>-->
+
+    <SurfaceView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--    top-->
+    <View
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/opacity_view"
+        android:layout_below="@+id/topView"/>
+
+    <!--    right-->
+    <View
+        android:id="@+id/right"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view"
+        android:layout_alignTop="@id/centerCropView"
+        android:layout_alignBottom="@id/centerCropView"
+        android:layout_alignParentEnd="true" />
+
+    <!--    left-->
+    <View
+        android:id="@+id/left"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view"
+        android:layout_alignTop="@id/centerCropView"
+        android:layout_alignBottom="@id/centerCropView"
+        android:layout_alignParentStart="true" />
+    <!--    bottom-->
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view"
+        android:layout_below="@id/centerCropView" />
+
+
+    <!--    top view -->
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/scan_ticket"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_33985"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:onClick="backPressed"
+            />
+        <ImageButton
+            android:id="@+id/btnFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/group33986"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginEnd="16dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/centerCropView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topView"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/scan_ticket_boarder"
+        >
+        <ImageView
+            android:id="@+id/imgSideType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/_E04F33"
+        android:layout_alignTop="@+id/centerCropView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="76dp"/>
+
+    <RelativeLayout
+        android:id="@+id/viewCompleteScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+        <ImageButton
+            android:id="@+id/btnReplay"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_replay_24"
+            android:onClick="replayPressed" />
+        <ImageButton
+            android:id="@+id/btnContinue"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_check_24"
+            android:onClick="continuePressed" />
+    </RelativeLayout>
+
+</RelativeLayout>

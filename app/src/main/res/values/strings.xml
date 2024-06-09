@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Valet</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="shared_preference">shared_preference</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="new_user"><u>New User</u></string>
+    <string name="user_name">Username</string>
+    <string name="pass_code">Passcode</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+
+    <string name="face_id">Face ID</string>
+    <string name="by_wetechr">By WeTechR</string>
+    <string name="arrival">Arrival</string>
+    <string name="departure">Departure</string>
+    <string name="_continue">Continue</string>
+    <string name="car_fleet">Car fleet</string>
+    <string name="good_evening">Good evening</string>
+    <string name="scan_car_plate_number">Scan Car Plate number</string>
+    <string name="text_not_recognized">text not recognized</string>
+    <string name="this_car_arrived_for_first_time">This car arrived for first time</string>
+    <string name="ticket">Ticket</string>
+    <string name="scan_the_ticket">Scan the ticket</string>
+    <string name="mandatory_car_photos">Mandatory car photos</string>
+    <string name="mandatory_photos">Mandatory  photos</string>
+    <string name="required">*Required</string>
+    <string name="click_on_car_to_start">click on car to start</string>
+    <string name="front_side">Front</string>
+    <string name="left_side">Left</string>
+    <string name="back_side">Back</string>
+    <string name="right_side">Right</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="additional_photos">Additional photos</string>
+    <string name="optional">Optional</string>
+    <string name="adding_more_photos_to_your_report">Adding more photos to your report</string>
+    <string name="start_taking_photos">Start taking photos</string>
+    <string name="scan_client_ticket">Scan client ticket</string>
+    <string name="report">Report</string>
+    <string name="car_report">Car Report</string>
+    <string name="ticket_billet">Client ticket / Billet client</string>
+    <string name="car_photos_photos_de_voitures">Car photos / Photos de voitures</string>
+    <string name="face_id_failed">Face ID Failed</string>
+    <string name="try_again">Try Again</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="issues_photos">Issues photos</string>
+    <string name="register">Register</string>
+    <string name="done">Done</string>
+    <string name="temporary">Car has been moved to temporary leave list</string>
+    <string name="removed">Car has been removed from the fleet</string>
+    <string name="setup_face">Setup face ID</string>
+    <string name="setup_face_unlock">Setup face unlock</string>
+    <string name="reset_face">Reset face ID</string>
+    <string name="get_started">Get Started</string>
+    <string name="setting">Setting</string>
+    <string name="submit">Submit</string>
+    <string name="submit_problem">Submit Problem</string>
+    <string name="report_damage">Report a damage</string>
+    <string name="force">Force synchronization </string>
+    <string name="not_found">Car not found on our fleet</string>
+
+    <string name="scan_front_side">Scan front side</string>
+    <string name="scan_left_side">Scan left side</string>
+    <string name="scan_back_side">Scan back side</string>
+    <string name="scan_right_side">Scan right side</string>
+    <string name="scan_car_part">Scan car part</string>
+    <string name="scan_ticket">Scan ticket</string>
+    <string name="ok">OK</string>
+    <string name="damage">Damage</string>
+    <string name="good_job">Good job</string>
+    <string name="you_don_t_have_any_cars_in_fleet">You don\'t have any cars in fleet</string>
+    <string name="submit_report">submit Report</string>
+    <string name="valet">Valet</string>
+    <string name="valet_voiturier">Valet / Voiturier</string>
+    <string name="sign_here">Sign here</string>
+    <string name="signature">Signature</string>
+    <string name="additional_images">Additional Images</string>
+    <string name="issues">Issues</string>
+    <string name="new_issues">New Issues</string>
+    <string name="submit_without_client_signature">Submit without client signature?</string>
+    <string name="submit_now">Submit now</string>
+    <string name="yes_submit_later">Yes, submit later</string>
+    <string name="no_back_to_report">No, add signature</string>
+    <string name="temporary_leave">Temporary leave</string>
+    <string name="find_the_vehicle">Find the vehicle</string>
+    <string name="scan_ticket_number">Scan ticket number</string>
+    <string name="search_in_car_fleet">Search in car fleet</string>
+    <string name="departure_case">Departure case</string>
+    <string name="company_code">Company Code</string>
+    <string name="save_signature">Save Signature</string>
+    <string name="cancel_signature">Cancel Signature</string>
+    <string name="add_signature">add signature</string>
+    <string name="update_signature">update signature</string>
+    <string name="search_plate_number">Search plate number...</string>
+    <string name="company_code_not_found">Company code not found</string>
+    <string name="passcode_not_found">Passcode not found</string>
+    <string name="damages">Damages</string>
+    <string name="submit_with_signature">Submit Without Signature</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="date_time">Date, Time / Date, Heure</string>
+    <string name="address">Address / Adresse</string>
+    <string name="vehicle">Vehicle / Véhicule</string>
+    <string name="previous_car_report">Previous Car Report</string>
+    <string name="do_you_need">Do you need to continue previous car report ?</string>
+    <string name="submit_without_signature">Submit without signature</string>
+    <string name="check_your_connectivity">Check your connectivity</string>
+    <string name="report_already_submitted_you_still_can_add_an_update">Report already submitted You still can add an Update.</string>
+    <string name="no_report_damages">no, Report Damages</string>
+    <string name="select_damaged_part">Select damaged part</string>
+    <string name="please_enter_company_code">Please enter company code</string>
+    <string name="please_enter_passcode">Please enter passcode</string>
+    <string name="please_face_identity">Please face identity</string>
+    <string name="ticket_number">Ticket Number</string>
+    <string name="location_permission_denied_unable_to_get_current_location">Location permission denied. Unable to get current location.</string>
+    <string name="ticket_already_exist">Ticket already exist</string>
+    <string name="sync_process_started">Sync process started</string>
+    <string name="please_select_front_image">Please select front image</string>
+    <string name="please_select_back_image">Please select back image</string>
+    <string name="please_select_right_image">Please select right image</string>
+    <string name="please_select_left_image">Please select left image</string>
+
+    <!--    for shared prefs only-->
+    <string name="COMPANY_CODE_KEY">COMPANY_CODE_KEY</string>
+    <string name="USER_ID_KEY">USER_ID_KEY</string>
+    <string name="FIRST_NAME_KEY">FIRST_NAME_KEY</string>
+    <string name="LAST_NAME_KEY">LAST_NAME_KEY</string>
+    <string name="USER_IMAGE_KEY">USER_IMAGE_KEY</string>
+    <string name="LAST_SYNC_KEY">LAST_SYNC_KEY</string>
+    <string name="REPORT_CAR_PLATE_KEY">REPORT_CAR_PLATE_KEY</string>
+    <string name="REPORT_TICKET_NUMBER_KEY">REPORT_TICKET_NUMBER_KEY</string>
+
+    <string name="FRONT_IMAGE_KEY">FRONT_IMAGE_KEY</string>
+    <string name="FRONT_IMAGE_DATE_KEY">FRONT_IMAGE_DATE_KEY</string>
+    <string name="FRONT_IMAGE_DAMAGES_KEY">FRONT_IMAGE_DAMAGES_KEY</string>
+
+    <string name="BACK_IMAGE_KEY">BACK_IMAGE_KEY</string>
+    <string name="BACK_IMAGE_DATE_KEY">BACK_IMAGE_DATE_KEY</string>
+    <string name="BACK_IMAGE_DAMAGES_KEY">BACK_IMAGE_DAMAGES_KEY</string>
+
+    <string name="RIGHT_IMAGE_KEY">RIGHT_IMAGE_KEY</string>
+    <string name="RIGHT_IMAGE_DATE_KEY">RIGHT_IMAGE_DATE_KEY</string>
+    <string name="RIGHT_IMAGE_DAMAGES_KEY">RIGHT_IMAGE_DAMAGES_KEY</string>
+
+    <string name="LEFT_IMAGE_KEY">LEFT_IMAGE_KEY</string>
+    <string name="LEFT_IMAGE_DATE_KEY">LEFT_IMAGE_DATE_KEY</string>
+    <string name="LEFT_IMAGE_DAMAGES_KEY">LEFT_IMAGE_DAMAGES_KEY</string>
+
+    <string name="ANOTHER_FRONT_IMAGE_KEY">ANOTHER_FRONT_IMAGE_KEY</string>
+    <string name="ANOTHER_FRONT_IMAGE_DATE_KEY">ANOTHER_FRONT_IMAGE_DATE_KEY</string>
+    <string name="ANOTHER_FRONT_IMAGE_DAMAGES_KEY">ANOTHER_FRONT_IMAGE_DAMAGES_KEY</string>
+
+    <string name="ANOTHER_BACK_IMAGE_KEY">ANOTHER_BACK_IMAGE_KEY</string>
+    <string name="ANOTHER_BACK_IMAGE_DATE_KEY">ANOTHER_BACK_IMAGE_DATE_KEY</string>
+    <string name="ANOTHER_BACK_IMAGE_DAMAGES_KEY">ANOTHER_BACK_IMAGE_DAMAGES_KEY</string>
+
+    <string name="ANOTHER_RIGHT_IMAGE_KEY">ANOTHER_RIGHT_IMAGE_KEY</string>
+    <string name="ANOTHER_RIGHT_IMAGE_DATE_KEY">ANOTHER_RIGHT_IMAGE_DATE_KEY</string>
+    <string name="ANOTHER_RIGHT_IMAGE_DAMAGES_KEY">ANOTHER_RIGHT_IMAGE_DAMAGES_KEY</string>
+
+    <string name="ANOTHER_LEFT_IMAGE_KEY">ANOTHER_LEFT_IMAGE_KEY</string>
+    <string name="ANOTHER_LEFT_IMAGE_DATE_KEY">ANOTHER_LEFT_IMAGE_DATE_KEY</string>
+    <string name="ANOTHER_LEFT_IMAGE_DAMAGES_KEY">ANOTHER_LEFT_IMAGE_DAMAGES_KEY</string>
+
+    <string name="DAMAGES_KEY">DAMAGES_KEY</string>
+    <string name="ADDITIONAL_KEY">ADDITIONAL_KEY</string>
+
+    <string name="UPDATE_DAMAGES_KEY">UPDATE_DAMAGES_KEY</string>
+
+</resources>

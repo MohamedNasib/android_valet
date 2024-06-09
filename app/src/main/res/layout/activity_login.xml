@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_key" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/back_icon"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:onClick="backPressed"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_image"
+        android:layout_marginTop="-80dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/report_damage_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_username_custom"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="6dp"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/company_code"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto"
+                android:lines="1"
+                android:singleLine="true"
+                android:nextFocusDown="@+id/et_passCode"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_username_custom"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/et_passCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/unlock"
+                android:paddingLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawablePadding="6dp"
+                android:hint="@string/pass_code"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto"
+                android:lines="1"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:imeActionLabel="Done"
+                />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_arrival_background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

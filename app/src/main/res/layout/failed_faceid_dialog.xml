@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/face_id_failed"
+                android:textColor="@color/face_id"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/try_again"
+                android:textSize="14sp"
+                android:textColor="@color/try_again" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/enterPasswordBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="12dp"
+                    android:text="@string/enter_password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/_007AFF"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"
+                    android:padding="12dp"
+                    android:textColor="@color/_007AFF"
+                    android:textAllCaps="false"
+                    android:layout_alignParentRight="true"
+                   />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

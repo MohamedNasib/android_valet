@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PickSideActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--    top-->
+    <View
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/opacity_view"
+        android:layout_below="@+id/topView"
+        android:visibility="gone"/>
+
+    <!--    right-->
+    <View
+        android:id="@+id/right"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view"
+        android:layout_alignTop="@id/centerCropView"
+        android:layout_alignBottom="@id/centerCropView"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+    <!--    left-->
+    <View
+        android:id="@+id/left"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view"
+        android:layout_alignTop="@id/centerCropView"
+        android:layout_alignBottom="@id/centerCropView"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+    <!--    bottom-->
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view"
+        android:layout_below="@id/centerCropView"
+        android:visibility="gone" />
+<!--    title-->
+    <!--    top view -->
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity_view">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnBack"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/scan_front_side"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_33985"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:onClick="backPressed"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/centerCropView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/car_front_border"
+        android:visibility="gone"
+        >
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imgSideType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/left_layer" />
+
+    <ImageButton
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button"
+        />
+    <ImageButton
+        android:id="@+id/btnFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/group33986"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="26dp"/>
+
+</RelativeLayout>

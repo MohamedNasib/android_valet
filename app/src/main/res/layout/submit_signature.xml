@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/submit_without_client_signature"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/black" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/_3C3C434D"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_back_to_report"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="14sp"
+                android:textColor="@color/_2F8B28"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/_3C3C434D" />
+
+            <Button
+                android:id="@+id/submitLaterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yes_submit_later"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14sp"
+                android:textColor="@color/_2B7BAE"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/_3C3C434D" />
+
+            <Button
+                android:id="@+id/submitNowBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="14sp"
+                android:text="@string/submit_now"
+                android:textColor="@color/_E04F33"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

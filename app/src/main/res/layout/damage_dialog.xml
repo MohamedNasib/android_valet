@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/okBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:background="@drawable/bgok"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="18sp"
+                android:textColor="@color/_2B7BAE"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+            
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/damageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/damage"
+                android:background="@drawable/bgdamage"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="18sp"
+                android:textColor="@color/_E04F33"
+                android:textAllCaps="false"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

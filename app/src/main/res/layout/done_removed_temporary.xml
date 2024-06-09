@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="8dp"
+    >
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="233dp"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:src="@drawable/close_icon" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/car_blue_done" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/done"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:text="@string/removed"
+            android:textAlignment="gravity"
+            android:textColor="#505255"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

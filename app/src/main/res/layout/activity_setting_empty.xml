@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity">
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/gradient_view"
+        >
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_33985"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:onClick="backPressed"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/arrow"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_btn_synchronization"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/topView"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="syncPressed"
+        android:background="@drawable/btn_face_id_custom">
+        <ImageView
+            android:id="@+id/face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/repeat_circle"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_face_id_custom"
+            android:textColor="@color/_007AFF"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/face"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/force"
+            />
+        <LinearLayout
+            android:id="@+id/synced_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:background="@drawable/error"
+            android:layout_marginEnd="24dp">
+            <TextView
+                android:id="@+id/txt_numError"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fully_synced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/check_true" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rl_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/rl_btn_synchronization"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E9ECF0"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/logout"
+            android:layout_marginStart="24dp"
+            android:textSize="14sp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            app:drawableStartCompat="@drawable/logout"
+            android:onClick="logoutPressed"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_logs"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/rl_btn_logout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E9ECF0"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Display Log"
+            android:textSize="14sp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:onClick="logPressed"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/btn_logs"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#E9ECF0"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Display Update Log"
+            android:textSize="14sp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:onClick="UpdateLogPressed"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
